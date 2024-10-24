@@ -234,18 +234,19 @@ h2 {
 
 #skills .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 kolom di atas */
+  grid-template-columns: repeat(3, 1fr); /* 2 kolom di atas */
   gap: 20px; 
 }
 
 /* Untuk layar dengan lebar tertentu, ubah menjadi 3 kolom */
 @media (max-width: 768px) { 
   #skills .skills-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom di bawah */
+    grid-template-columns: repeat(2, 1fr); /* 3 kolom di bawah */
+  }
+
+  #projects .projects-grid {
+    display: flex;
+    flex-direction: column; /* Susun elemen secara vertikal */
   }
 }
 
-#projects .projects-grid {
-  display: flex;
-  flex-direction: column; /* Susun elemen secara vertikal */
-}
